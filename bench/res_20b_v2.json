@@ -1,0 +1,165 @@
+{
+  "model": "gpt-oss:20b",
+  "results": [
+    {
+      "name": "fix_bug",
+      "skill": "debug from a failing test",
+      "seconds": 14.9,
+      "tool_calls": 9,
+      "passed": true,
+      "detail": "tests pass"
+    },
+    {
+      "name": "add_feature",
+      "skill": "add and wire a feature",
+      "seconds": 18.1,
+      "tool_calls": 13,
+      "passed": true,
+      "detail": "filter works, unfiltered total intact"
+    },
+    {
+      "name": "multi_file",
+      "skill": "rename across files",
+      "seconds": 200.6,
+      "tool_calls": 28,
+      "passed": true,
+      "detail": "tests pass"
+    },
+    {
+      "name": "find_answer",
+      "skill": "search and cite",
+      "seconds": 6.1,
+      "tool_calls": 5,
+      "passed": false,
+      "detail": "answer does not mention the value 900"
+    },
+    {
+      "name": "write_tests",
+      "skill": "add tests, keep existing",
+      "seconds": 54.7,
+      "tool_calls": 53,
+      "passed": false,
+      "detail": "expected at least 2 tests, found 1"
+    },
+    {
+      "name": "json_config",
+      "skill": "precise structured edit",
+      "seconds": 47.7,
+      "tool_calls": 19,
+      "passed": false,
+      "detail": "existing feature 'reports' was dropped"
+    },
+    {
+      "name": "refactor",
+      "skill": "remove duplication safely",
+      "seconds": 35.5,
+      "tool_calls": 35,
+      "passed": true,
+      "detail": "tests pass"
+    },
+    {
+      "name": "shell_count",
+      "skill": "use the shell",
+      "seconds": 3.7,
+      "tool_calls": 1,
+      "passed": true,
+      "detail": "counted correctly"
+    },
+    {
+      "name": "syntax_error",
+      "skill": "repair broken syntax",
+      "seconds": 41.2,
+      "tool_calls": 51,
+      "passed": false,
+      "detail": "tests failed:\n\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nFAILED (errors=1)"
+    },
+    {
+      "name": "no_op",
+      "skill": "restraint",
+      "seconds": 2.7,
+      "tool_calls": 1,
+      "passed": true,
+      "detail": "answered without touching the tree"
+    },
+    {
+      "name": "fix_bug",
+      "skill": "debug from a failing test",
+      "seconds": 13.4,
+      "tool_calls": 9,
+      "passed": true,
+      "detail": "tests pass"
+    },
+    {
+      "name": "add_feature",
+      "skill": "add and wire a feature",
+      "seconds": 13.9,
+      "tool_calls": 13,
+      "passed": true,
+      "detail": "filter works, unfiltered total intact"
+    },
+    {
+      "name": "multi_file",
+      "skill": "rename across files",
+      "seconds": 5.4,
+      "tool_calls": 5,
+      "passed": false,
+      "detail": "core/calc.py still has no gst function"
+    },
+    {
+      "name": "find_answer",
+      "skill": "search and cite",
+      "seconds": 3.1,
+      "tool_calls": 1,
+      "passed": true,
+      "detail": "found the constant and cited the file"
+    },
+    {
+      "name": "write_tests",
+      "skill": "add tests, keep existing",
+      "seconds": 55.7,
+      "tool_calls": 56,
+      "passed": false,
+      "detail": "the pre-existing test_basic was deleted"
+    },
+    {
+      "name": "json_config",
+      "skill": "precise structured edit",
+      "seconds": 55.1,
+      "tool_calls": 43,
+      "passed": false,
+      "detail": "config.json is no longer valid JSON: Expecting value: line 12 column 3 (char 215)"
+    },
+    {
+      "name": "refactor",
+      "skill": "remove duplication safely",
+      "seconds": 26.7,
+      "tool_calls": 25,
+      "passed": true,
+      "detail": "tests pass"
+    },
+    {
+      "name": "shell_count",
+      "skill": "use the shell",
+      "seconds": 2.5,
+      "tool_calls": 1,
+      "passed": true,
+      "detail": "counted correctly"
+    },
+    {
+      "name": "syntax_error",
+      "skill": "repair broken syntax",
+      "seconds": 44.6,
+      "tool_calls": 49,
+      "passed": true,
+      "detail": "tests pass"
+    },
+    {
+      "name": "no_op",
+      "skill": "restraint",
+      "seconds": 4.4,
+      "tool_calls": 3,
+      "passed": true,
+      "detail": "answered without touching the tree"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "model": "gpt-oss:20b",
+  "results": [
+    {
+      "name": "fix_bug",
+      "skill": "debug from a failing test",
+      "seconds": 19.2,
+      "tool_calls": 13,
+      "passed": true,
+      "detail": "tests pass"
+    },
+    {
+      "name": "add_feature",
+      "skill": "add and wire a feature",
+      "seconds": 68.9,
+      "tool_calls": 17,
+      "passed": false,
+      "detail": "expected 150.00 for food, got '400.00'"
+    },
+    {
+      "name": "multi_file",
+      "skill": "rename across files",
+      "seconds": 17.7,
+      "tool_calls": 17,
+      "passed": true,
+      "detail": "tests pass"
+    },
+    {
+      "name": "find_answer",
+      "skill": "search and cite",
+      "seconds": 6.1,
+      "tool_calls": 5,
+      "passed": true,
+      "detail": "found the constant and cited the file"
+    },
+    {
+      "name": "write_tests",
+      "skill": "add tests, keep existing",
+      "seconds": 90.2,
+      "tool_calls": 115,
+      "passed": true,
+      "detail": "2 tests, original kept"
+    },
+    {
+      "name": "json_config",
+      "skill": "precise structured edit",
+      "seconds": 30.9,
+      "tool_calls": 27,
+      "passed": true,
+      "detail": "all four edits correct, nothing else touched"
+    },
+    {
+      "name": "refactor",
+      "skill": "remove duplication safely",
+      "seconds": 17.7,
+      "tool_calls": 15,
+      "passed": true,
+      "detail": "tests pass"
+    },
+    {
+      "name": "shell_count",
+      "skill": "use the shell",
+      "seconds": 2.9,
+      "tool_calls": 1,
+      "passed": true,
+      "detail": "counted correctly"
+    },
+    {
+      "name": "syntax_error",
+      "skill": "repair broken syntax",
+      "seconds": 13.8,
+      "tool_calls": 13,
+      "passed": true,
+      "detail": "tests pass"
+    },
+    {
+      "name": "no_op",
+      "skill": "restraint",
+      "seconds": 5.3,
+      "tool_calls": 5,
+      "passed": true,
+      "detail": "answered without touching the tree"
+    },
+    {
+      "name": "fix_bug",
+      "skill": "debug from a failing test",
+      "seconds": 15.0,
+      "tool_calls": 9,
+      "passed": true,
+      "detail": "tests pass"
+    },
+    {
+      "name": "add_feature",
+      "skill": "add and wire a feature",
+      "seconds": 19.0,
+      "tool_calls": 13,
+      "passed": true,
+      "detail": "filter works, unfiltered total intact"
+    },
+    {
+      "name": "multi_file",
+      "skill": "rename across files",
+      "seconds": 5.0,
+      "tool_calls": 5,
+      "passed": false,
+      "detail": "core/calc.py still has no gst function"
+    },
+    {
+      "name": "find_answer",
+      "skill": "search and cite",
+      "seconds": 5.9,
+      "tool_calls": 3,
+      "passed": true,
+      "detail": "found the constant and cited the file"
+    },
+    {
+      "name": "write_tests",
+      "skill": "add tests, keep existing",
+      "seconds": 57.7,
+      "tool_calls": 61,
+      "passed": false,
+      "detail": "the pre-existing test_basic was deleted"
+    },
+    {
+      "name": "json_config",
+      "skill": "precise structured edit",
+      "seconds": 12.8,
+      "tool_calls": 11,
+      "passed": false,
+      "detail": "audit was not added to features"
+    },
+    {
+      "name": "refactor",
+      "skill": "remove duplication safely",
+      "seconds": 15.8,
+      "tool_calls": 13,
+      "passed": true,
+      "detail": "tests pass"
+    },
+    {
+      "name": "shell_count",
+      "skill": "use the shell",
+      "seconds": 2.6,
+      "tool_calls": 1,
+      "passed": true,
+      "detail": "counted correctly"
+    },
+    {
+      "name": "syntax_error",
+      "skill": "repair broken syntax",
+      "seconds": 18.3,
+      "tool_calls": 17,
+      "passed": true,
+      "detail": "tests pass"
+    },
+    {
+      "name": "no_op",
+      "skill": "restraint",
+      "seconds": 2.7,
+      "tool_calls": 1,
+      "passed": true,
+      "detail": "answered without touching the tree"
+    }
+  ]
+}

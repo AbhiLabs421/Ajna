@@ -1,0 +1,165 @@
+{
+  "model": "gpt-oss:120b",
+  "results": [
+    {
+      "name": "fix_bug",
+      "skill": "debug from a failing test",
+      "seconds": 12.5,
+      "tool_calls": 9,
+      "passed": true,
+      "detail": "tests pass"
+    },
+    {
+      "name": "add_feature",
+      "skill": "add and wire a feature",
+      "seconds": 13.0,
+      "tool_calls": 19,
+      "passed": true,
+      "detail": "filter works, unfiltered total intact"
+    },
+    {
+      "name": "multi_file",
+      "skill": "rename across files",
+      "seconds": 26.3,
+      "tool_calls": 49,
+      "passed": true,
+      "detail": "tests pass"
+    },
+    {
+      "name": "find_answer",
+      "skill": "search and cite",
+      "seconds": 4.6,
+      "tool_calls": 5,
+      "passed": true,
+      "detail": "found the constant and cited the file"
+    },
+    {
+      "name": "write_tests",
+      "skill": "add tests, keep existing",
+      "seconds": 13.1,
+      "tool_calls": 19,
+      "passed": true,
+      "detail": "4 tests, original kept"
+    },
+    {
+      "name": "json_config",
+      "skill": "precise structured edit",
+      "seconds": 6.8,
+      "tool_calls": 7,
+      "passed": false,
+      "detail": "api endpoint is 'http://localhost:8080'"
+    },
+    {
+      "name": "refactor",
+      "skill": "remove duplication safely",
+      "seconds": 30.7,
+      "tool_calls": 25,
+      "passed": false,
+      "detail": "the validation is still duplicated 2 times"
+    },
+    {
+      "name": "shell_count",
+      "skill": "use the shell",
+      "seconds": 2.0,
+      "tool_calls": 1,
+      "passed": true,
+      "detail": "counted correctly"
+    },
+    {
+      "name": "syntax_error",
+      "skill": "repair broken syntax",
+      "seconds": 10.1,
+      "tool_calls": 13,
+      "passed": true,
+      "detail": "tests pass"
+    },
+    {
+      "name": "no_op",
+      "skill": "restraint",
+      "seconds": 1.9,
+      "tool_calls": 1,
+      "passed": true,
+      "detail": "answered without touching the tree"
+    },
+    {
+      "name": "fix_bug",
+      "skill": "debug from a failing test",
+      "seconds": 10.3,
+      "tool_calls": 9,
+      "passed": true,
+      "detail": "tests pass"
+    },
+    {
+      "name": "add_feature",
+      "skill": "add and wire a feature",
+      "seconds": 10.0,
+      "tool_calls": 15,
+      "passed": true,
+      "detail": "filter works, unfiltered total intact"
+    },
+    {
+      "name": "multi_file",
+      "skill": "rename across files",
+      "seconds": 22.1,
+      "tool_calls": 37,
+      "passed": true,
+      "detail": "tests pass"
+    },
+    {
+      "name": "find_answer",
+      "skill": "search and cite",
+      "seconds": 4.4,
+      "tool_calls": 3,
+      "passed": true,
+      "detail": "found the constant and cited the file"
+    },
+    {
+      "name": "write_tests",
+      "skill": "add tests, keep existing",
+      "seconds": 70.5,
+      "tool_calls": 75,
+      "passed": true,
+      "detail": "4 tests, original kept"
+    },
+    {
+      "name": "json_config",
+      "skill": "precise structured edit",
+      "seconds": 12.3,
+      "tool_calls": 13,
+      "passed": true,
+      "detail": "all four edits correct, nothing else touched"
+    },
+    {
+      "name": "refactor",
+      "skill": "remove duplication safely",
+      "seconds": 23.2,
+      "tool_calls": 21,
+      "passed": true,
+      "detail": "tests pass"
+    },
+    {
+      "name": "shell_count",
+      "skill": "use the shell",
+      "seconds": 1.9,
+      "tool_calls": 1,
+      "passed": true,
+      "detail": "counted correctly"
+    },
+    {
+      "name": "syntax_error",
+      "skill": "repair broken syntax",
+      "seconds": 10.3,
+      "tool_calls": 13,
+      "passed": true,
+      "detail": "tests pass"
+    },
+    {
+      "name": "no_op",
+      "skill": "restraint",
+      "seconds": 3.2,
+      "tool_calls": 1,
+      "passed": true,
+      "detail": "answered without touching the tree"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ajna"
+version = "0.1.0"
+description = "A fast terminal coding agent with no third-party dependencies"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+ajna = "ajna.cli:main"
+
+[tool.setuptools]
+packages = ["ajna", "ajna.tools"]

@@ -1,0 +1,85 @@
+{
+  "model": "gpt-oss:20b",
+  "results": [
+    {
+      "name": "fix_bug",
+      "skill": "debug from a failing test",
+      "seconds": 15.5,
+      "tool_calls": 11,
+      "passed": true,
+      "detail": "tests pass"
+    },
+    {
+      "name": "add_feature",
+      "skill": "add and wire a feature",
+      "seconds": 23.7,
+      "tool_calls": 11,
+      "passed": true,
+      "detail": "filter works, unfiltered total intact"
+    },
+    {
+      "name": "multi_file",
+      "skill": "rename across files",
+      "seconds": 20.0,
+      "tool_calls": 23,
+      "passed": true,
+      "detail": "tests pass"
+    },
+    {
+      "name": "find_answer",
+      "skill": "search and cite",
+      "seconds": 5.3,
+      "tool_calls": 3,
+      "passed": true,
+      "detail": "found the constant and cited the file"
+    },
+    {
+      "name": "write_tests",
+      "skill": "add tests, keep existing",
+      "seconds": 34.3,
+      "tool_calls": 27,
+      "passed": false,
+      "detail": "expected at least 2 tests, found 1"
+    },
+    {
+      "name": "json_config",
+      "skill": "precise structured edit",
+      "seconds": 20.9,
+      "tool_calls": 17,
+      "passed": true,
+      "detail": "all four edits correct, nothing else touched"
+    },
+    {
+      "name": "refactor",
+      "skill": "remove duplication safely",
+      "seconds": 19.8,
+      "tool_calls": 19,
+      "passed": true,
+      "detail": "tests pass"
+    },
+    {
+      "name": "shell_count",
+      "skill": "use the shell",
+      "seconds": 2.9,
+      "tool_calls": 1,
+      "passed": true,
+      "detail": "counted correctly"
+    },
+    {
+      "name": "syntax_error",
+      "skill": "repair broken syntax",
+      "seconds": 15.5,
+      "tool_calls": 17,
+      "passed": true,
+      "detail": "tests pass"
+    },
+    {
+      "name": "no_op",
+      "skill": "restraint",
+      "seconds": 2.6,
+      "tool_calls": 1,
+      "passed": true,
+      "detail": "answered without touching the tree"
+    }
+  ]
+}

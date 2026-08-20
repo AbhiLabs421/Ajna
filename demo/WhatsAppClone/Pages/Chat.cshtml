@@ -1,0 +1,73 @@
+@page
+@model ChatModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WhatsApp Clone</title>
+  <style>
+    * { box-sizing:border-box;margin:0;padding:0; }
+    body,html{height:100%;font-family:Arial,Helvetica,sans-serif;}
+    .app{display:flex;height:100vh;background:#ece5dd;}
+    .sidebar{width:260px;background:#fff;border-right:1px solid #ddd;display:flex;flex-direction:column;}
+    .search-box{padding:10px;border-bottom:1px solid #ddd;}
+    .search-box input{width:100%;padding:8px;border:none;background:#f0f0f0;border-radius:20px;}
+    .contacts{flex:1;overflow-y:auto;}
+    .contact{display:flex;align-items:center;padding:10px;cursor:pointer;}
+    .contact:hover{background:#f5f5f5;}
+    .contact img{width:45px;height:45px;border-radius:50%;margin-right:10px;}
+    .contact .info{flex:1;}
+    .contact .info .name{font-weight:bold;}
+    .contact .info .last{font-size:.85rem;color:#555;}
+    .chat{flex:1;display:flex;flex-direction:column;}
+    .chat-header{padding:15px;background:#ededed;border-bottom:1px solid #ddd;font-weight:bold;}
+    .messages{flex:1;padding:15px;overflow-y:auto;background:#e5ddd5;}
+    .msg{max-width:70%;margin-bottom:12px;padding:8px 12px;border-radius:7px;line-height:1.4;}
+    .msg.incoming{background:#fff;align-self:flex-start;}
+    .msg.outgoing{background:#dcf8c6;align-self:flex-end;}
+    .chat-input{display:flex;padding:10px;background:#f0f0f0;border-top:1px solid #ddd;}
+    .chat-input input{flex:1;padding:10px;border:none;border-radius:20px;background:#fff;}
+    .chat-input button{margin-left:8px;padding:0 16px;border:none;background:#128c7e;color:#fff;border-radius:20px;cursor:pointer;}
+  </style>
+</head>
+<body>
+<div class="app">
+  <div class="sidebar">
+    <div class="search-box"><input type="text" placeholder="Search or start new chat"></div>
+    <div class="contacts">
+      <div class="contact"><img src="https://i.pravatar.cc/45?u=alice" alt="Alice"><div class="info"><div class="name">Alice</div><div class="last">Hey, are you there?</div></div></div>
+      <div class="contact"><img src="https://i.pravatar.cc/45?u=bob" alt="Bob"><div class="info"><div class="name">Bob</div><div class="last">👍</div></div></div>
+    </div>
+  </div>
+  <div class="chat">
+    <div class="chat-header">Alice</div>
+    <div class="messages" id="msgContainer">
+      <div class="msg incoming">Hey! How's it going?</div>
+      <div class="msg outgoing">All good, thanks! You?</div>
+      <div class="msg incoming">Doing great 😊</div>
+    </div>
+    <div class="chat-input">
+      <input id="msgInput" type="text" placeholder="Type a message">
+      <button onclick="send()">Send</button>
+    </div>
+  </div>
+</div>
+<script>
+  function send(){
+    const i=document.getElementById('msgInput');
+    const txt=i.value.trim();
+    if(!txt) return;
+    const d=document.createElement('div');
+    d.className='msg outgoing';
+    d.textContent=txt;
+    document.getElementById('msgContainer').appendChild(d);
+    i.value='';
+    document.getElementById('msgContainer').scrollTop=document.getElementById('msgContainer').scrollHeight;
+  }
+  document.getElementById('msgInput').addEventListener('keypress',e=>{if(e.key==='Enter') send();});
+</script>
+</body>
+</html>

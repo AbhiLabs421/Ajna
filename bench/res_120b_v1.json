@@ -1,0 +1,85 @@
+{
+  "model": "gpt-oss:120b",
+  "results": [
+    {
+      "name": "fix_bug",
+      "skill": "debug from a failing test",
+      "seconds": 30.1,
+      "tool_calls": 9,
+      "passed": true,
+      "detail": "tests pass"
+    },
+    {
+      "name": "add_feature",
+      "skill": "add and wire a feature",
+      "seconds": 8.8,
+      "tool_calls": 11,
+      "passed": true,
+      "detail": "filter works, unfiltered total intact"
+    },
+    {
+      "name": "multi_file",
+      "skill": "rename across files",
+      "seconds": 16.0,
+      "tool_calls": 25,
+      "passed": false,
+      "detail": "report.py still references compute_tax"
+    },
+    {
+      "name": "find_answer",
+      "skill": "search and cite",
+      "seconds": 5.7,
+      "tool_calls": 5,
+      "passed": true,
+      "detail": "found the constant and cited the file"
+    },
+    {
+      "name": "write_tests",
+      "skill": "add tests, keep existing",
+      "seconds": 26.3,
+      "tool_calls": 33,
+      "passed": true,
+      "detail": "5 tests, original kept"
+    },
+    {
+      "name": "json_config",
+      "skill": "precise structured edit",
+      "seconds": 30.5,
+      "tool_calls": 23,
+      "passed": true,
+      "detail": "all four edits correct, nothing else touched"
+    },
+    {
+      "name": "refactor",
+      "skill": "remove duplication safely",
+      "seconds": 22.7,
+      "tool_calls": 9,
+      "passed": false,
+      "detail": "the validation is still duplicated 2 times"
+    },
+    {
+      "name": "shell_count",
+      "skill": "use the shell",
+      "seconds": 2.2,
+      "tool_calls": 1,
+      "passed": true,
+      "detail": "counted correctly"
+    },
+    {
+      "name": "syntax_error",
+      "skill": "repair broken syntax",
+      "seconds": 10.6,
+      "tool_calls": 13,
+      "passed": true,
+      "detail": "tests pass"
+    },
+    {
+      "name": "no_op",
+      "skill": "restraint",
+      "seconds": 2.2,
+      "tool_calls": 1,
+      "passed": true,
+      "detail": "answered without touching the tree"
+    }
+  ]
+}

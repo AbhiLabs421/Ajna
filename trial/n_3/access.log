@@ -1,0 +1,10 @@
+10.0.0.1 - - [10/Oct/2023:13:55:36 +0000] "GET /index.html HTTP/1.1" 200 2326
+10.0.0.2 - - [10/Oct/2023:13:55:37 +0000] "GET /index.html HTTP/1.1" 200 2326
+10.0.0.1 - - [10/Oct/2023:13:55:38 +0000] "POST /login HTTP/1.1" 302 0
+this line is not a log line at all
+10.0.0.3 - - [10/Oct/2023:13:56:01 +0000] "GET /missing HTTP/1.1" 404 512
+10.0.0.1 - - [10/Oct/2023:13:56:02 +0000] "GET /style.css HTTP/1.1" 200 1024
+10.0.0.2 - - [10/Oct/2023:13:56:03 +0000] "DELETE /admin HTTP/1.1" 500 128
+10.0.0.4 - - [10/Oct/2023:13:56:04 +0000] "GET /index.html HTTP/1.1" 200 -
+<<< garbage >>>
+10.0.0.2 - - [10/Oct/2023:13:56:05 +0000] "GET /missing HTTP/1.1" 404 512
