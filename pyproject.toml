@@ -1,13 +1,35 @@
 [build-system]
-requires = ["setuptools>=61"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ajna"
+name = "ajna-cli"
 version = "0.1.0"
-description = "A fast terminal coding agent with no third-party dependencies"
+description = "A fast, zero-dependency terminal coding agent in pure Python"
+readme = "README.md"
 requires-python = ">=3.8"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Abhi Singh" }]
+keywords = [
+    "coding-agent", "ai-agent", "cli", "terminal", "llm",
+    "developer-tools", "ollama", "agentic", "ai-coding-assistant",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development",
+    "Topic :: Utilities",
+]
 dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/AbhiLabs421/Ajna"
+Repository = "https://github.com/AbhiLabs421/Ajna"
+Issues = "https://github.com/AbhiLabs421/Ajna/issues"
 
 [project.scripts]
 ajna = "ajna.cli:main"
