@@ -1,26 +1,35 @@
 # ajna
 
+![Python](https://img.shields.io/badge/python-3.8%2B-blue)
+![License: MIT](https://img.shields.io/badge/license-MIT-green)
+![Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)
+
 A terminal coding agent in pure Python. No third-party packages, no build step,
 no virtualenv. Cold start is about 180 ms.
 
+It runs on free models too: a repair layer absorbs the mistakes small models
+make, so `gpt-oss:20b` on Ollama's free tier completes tasks that otherwise
+need a frontier model. Bring your own key for any provider, or run fully local.
+
 ## Install
 
-Nothing to install beyond Python 3.8+. Put this folder on your `PATH` and the
-`ajna` command works from anywhere:
+Clone the repository — there is nothing else to download, and no build step:
 
-```powershell
-$env:PATH += ";D:\bhaiya\claude-code-cli"
+```bash
+git clone https://github.com/AbhiLabs421/Ajna.git
+cd Ajna
 ```
 
-To make that permanent, add the folder under System Properties → Environment
-Variables → Path. On macOS or Linux, symlink `ajna.sh` as `ajna` somewhere on
-your `PATH`.
-
-Optionally install it as a real console script:
+Install it as a console script (needs only Python 3.8+):
 
 ```bash
 pip install -e .
 ```
+
+That puts an `ajna` command on your `PATH`. Prefer not to install? Add the
+cloned folder to your `PATH` and run the `ajna` launcher directly — on Windows
+use `ajna.cmd`, on macOS or Linux symlink `ajna.sh` as `ajna` somewhere on your
+`PATH`.
 
 ## Configure
 
