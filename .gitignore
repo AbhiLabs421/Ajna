@@ -9,3 +9,7 @@ venv/
 # Never commit a config file — it holds the API key in plain text.
 config.json
 .ajna/
+
+# .NET build output (demo projects)
+bin/
+obj/
