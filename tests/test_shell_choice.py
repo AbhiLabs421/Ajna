@@ -50,8 +50,11 @@ class ArgvTest(unittest.TestCase):
         if argv is None:
             self.skipTest("cmd.exe not present")
         self.assertEqual(kind, "cmd")
+        # cmd is run from one verbatim string (not a list), so Python's
+        # list2cmdline cannot mangle the command's own quotes.
+        self.assertIsInstance(argv, str)
         self.assertIn("/c", argv)
-        self.assertEqual(argv[-1], "echo hi")
+        self.assertTrue(argv.endswith("echo hi"))
 
     def test_bash_uses_bash_flags(self):
         argv, kind = shell._shell_command("echo hi", "bash")

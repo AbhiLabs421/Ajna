@@ -118,6 +118,15 @@ def _shell_command(command, kind):
     kind, executable, flags, _note = resolve(kind)
     if not executable:
         return None, kind
+    if kind == "cmd":
+        # cmd.exe does not understand the \"-escaped quotes that Python's
+        # list2cmdline produces for a list argv, so a command like
+        # `python -c "print(6*7)"` reaches the child with mangled quotes and
+        # runs as a silent no-op (exit 0, no output). Passing one verbatim
+        # string skips list2cmdline: CreateProcess hands it to cmd.exe
+        # unchanged and cmd applies its own `/s` quote stripping.
+        exe = '"%s"' % executable if " " in executable else executable
+        return "%s %s %s" % (exe, " ".join(flags), command), kind
     return [executable] + flags + [command], kind
 
 
