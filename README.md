@@ -11,6 +11,18 @@ It runs on free models too: a repair layer absorbs the mistakes small models
 make, so `gpt-oss:20b` on Ollama's free tier completes tasks that otherwise
 need a frontier model. Bring your own key for any provider, or run fully local.
 
+## Demo
+
+<!-- Record with: python scripts/demo.py   then drop the GIF in here:
+     ![ajna fixing a failing test](docs/demo.gif) -->
+
+ajna reads the code, finds the bug, and fixes it on its own. See it run on a
+throwaway sample project — nothing in your own files is touched:
+
+```bash
+python scripts/demo.py
+```
+
 ## Install
 
 Clone the repository — there is nothing else to download, and no build step:
