@@ -49,13 +49,16 @@ use `ajna.cmd`, on macOS or Linux symlink `ajna.sh` as `ajna` somewhere on your
 ajna --setup
 ```
 
-This asks for a provider, an API key, and a model, verifies the model answers,
-and writes `~/.ajna/config.json`. The key is stored in plain text there, so
-treat that file as a secret; `AJNA_API_KEY` in the environment overrides it.
+This asks for a provider, an API key, a model, and the base URL (it defaults to
+the provider's own endpoint — just press Enter unless you point at a custom
+one), verifies the model answers, and writes `~/.ajna/config.json`. The key is
+stored in plain text there, so treat that file as a secret; `AJNA_API_KEY` in
+the environment overrides it, as does `AJNA_BASE_URL` for the endpoint.
 
 Providers: `ollama` (Ollama Cloud), `ollama-local`, `openai`, `anthropic`,
-`groq`, `together`, `openrouter`. Anything OpenAI-compatible works via
-`--provider openai --base-url <url>`.
+`groq`, `together`, `openrouter`. Anything OpenAI-compatible works by choosing
+`openai` and giving its URL at the base-url prompt (or `--provider openai
+--base-url <url>`).
 
 ## Use
 

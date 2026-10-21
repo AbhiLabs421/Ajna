@@ -683,7 +683,9 @@ def setup(cfg):
         model = input(ui.c("  model [%s]: " % (cfg.model or preset["default_model"]),
                            "byellow")).strip()
         cfg.model = model or cfg.model or preset["default_model"]
-        cfg.base_url = preset["base_url"]
+        base = input(ui.c("  base url [%s]: " % preset["base_url"],
+                          "byellow")).strip()
+        cfg.base_url = base or preset["base_url"]
     except (EOFError, KeyboardInterrupt):
         ui.out("")
         return 1
